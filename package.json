@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "choco": "^0.2.1",
+    "firebase": "^10.14.0",
+    "node": "^22.9.0",
+    "react": "^18.3.1",
+    "ffi-napi":"4.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install": "neon build",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+  }
+}
