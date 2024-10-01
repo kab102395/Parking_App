@@ -1,0 +1,10 @@
+C:\Users\kab10\Documents\Parking_App\cd my-napi-project\target\debug\deps\napi_derive-48d7d89ac11fe945.dll: C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src/lib.rs C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\compat_macro.rs C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand.rs C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\mod.rs C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\attrs.rs C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand\napi.rs
+
+C:\Users\kab10\Documents\Parking_App\cd my-napi-project\target\debug\deps\napi_derive-48d7d89ac11fe945.d: C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src/lib.rs C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\compat_macro.rs C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand.rs C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\mod.rs C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\attrs.rs C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand\napi.rs
+
+C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src/lib.rs:
+C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\compat_macro.rs:
+C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand.rs:
+C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\mod.rs:
+C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\attrs.rs:
+C:\Users\kab10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand\napi.rs:

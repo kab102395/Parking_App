@@ -1,0 +1,1 @@
+C:\Users\kab10\Documents\Parking_App\cd\ my-napi-project\target\debug\my_napi_project.dll: C:\Users\kab10\Documents\Parking_App\cd\ my-napi-project\build.rs C:\Users\kab10\Documents\Parking_App\cd\ my-napi-project\src\lib.rs
