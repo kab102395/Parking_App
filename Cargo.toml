@@ -1,6 +1,26 @@
 [package]
-name = "Parking_App"
+name = "lao"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+crate-type = ["rlib","cdylib"]
+name = "functions_library"
+
 [dependencies]
+# Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
+napi = { version = "2.12.2", default-features = false, features = ["napi4"] }
+napi-derive = "2.12.2"
+reqwest = { version = "0.12.7", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+libc = "0.2.159"
+
+[build-dependencies]
+napi-build = "2.0.1"
+
+[profile.release]
+lto = true
+strip = "symbols"
+
+
