@@ -47,7 +47,7 @@ impl std::fmt::Display for FirestoreError {
 impl Error for FirestoreError {}
 
 pub async fn get_firestore_document(doc_path: &str) -> Result<FirestoreDocument, FirestoreError> {
-    let url = format!("https://lao-app-e6f57.firebaseio.com/https://lao-app-e6f57.firebaseio.com/{}", doc_path);
+    let url = format!("https://parking-app-9054f-default-rtdb.firebaseio.com/{}", doc_path);
     
     let client = Client::new();
     let response = client
