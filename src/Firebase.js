@@ -2,7 +2,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-
+import { getFirestore } from 'firebase/firestore';
 const firebaseConfig = {
     apiKey: "AIzaSyDaRwFP8fbZfI5P3OoUPFzn_xcgv272BCg",
     authDomain: "parking-app-9054f.firebaseapp.com",
