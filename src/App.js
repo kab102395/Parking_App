@@ -1,18 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import CampusAreaSelection from './pages/CampusAreaSelection';
 import ParkingArea from './pages/ParkingArea';
+import Reservation from './pages/Reservation';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/area/:area" element={<ParkingArea />} />
+        <Route path="/reserve/:spotId" element={<Reservation />} />
       </Routes>
-    </div>
+    </Router>
   );
 }
 

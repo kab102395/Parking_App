@@ -1,9 +1,10 @@
+// src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="bg-black p-4 shadow-lg">  {/* Black background with shadow */}
+    <nav className="bg-black p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold text-white">Parking Spot Finder</h1>
         <ul className="flex space-x-6">
@@ -17,18 +18,18 @@ function Navbar() {
           </li>
           <li>
             <Link 
-              to="/about" 
+              to="/area/west"  // This will direct to the west parking area
               className="text-white hover:text-gray-300 font-medium text-lg transition duration-300"
             >
-              About
+              Parking Area
             </Link>
           </li>
           <li>
             <Link 
-              to="/contact" 
+              to="/reserve/1"  // This is an example, you can dynamically add the spotId
               className="text-white hover:text-gray-300 font-medium text-lg transition duration-300"
             >
-              Contact
+              Reservation
             </Link>
           </li>
         </ul>

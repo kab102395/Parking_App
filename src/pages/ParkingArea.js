@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import db from '../Firebase';  // Import Firestore instance
+import { Link, useParams } from 'react-router-dom';
+import db from '../Firebase';  // Ensure this is the correct path to your Firebase config
 
-function ParkingArea({ area }) {
+function ParkingArea() {
+  const { area } = useParams();  // Use useParams to get the 'area' from the URL
   const [parkingSpots, setParkingSpots] = useState([]);
 
   useEffect(() => {
     const fetchSpots = async () => {
-      const snapshot = await db.collection('parkingSpots')
-        .where('area', '==', area)
-        .get();  // Filter by area
-      const spots = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-      setParkingSpots(spots);
+      try {
+        const snapshot = await db.collection('parkingSpots')
+          .where('area', '==', area)
+          .get();  // Filter by area
+          
+        const spots = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setParkingSpots(spots);
+      } catch (error) {
+        console.error("Error fetching parking spots:", error);
+      }
     };
 
     fetchSpots();
@@ -20,7 +26,7 @@ function ParkingArea({ area }) {
   return (
     <div className="bg-gray-100 min-h-screen p-8">
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold text-black mb-6">Parking Spots - {area}</h1>
+        <h1 className="text-4xl font-bold text-black mb-6">Parking Spots in {area}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {parkingSpots.length > 0 ? (
             parkingSpots.map((spot) => (
@@ -36,7 +42,7 @@ function ParkingArea({ area }) {
               </div>
             ))
           ) : (
-            <p className="text-center text-black">No spots available</p>
+            <p className="text-center text-black">No spots available in {area}</p>
           )}
         </div>
       </div>
